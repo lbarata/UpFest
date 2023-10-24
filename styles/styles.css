@@ -1,0 +1,890 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #181818;
+  box-shadow: 20px 20px 20px 15px #232323;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+}
+.menu > a > img {
+  width: 22px;
+  height: 22px;
+}
+
+.buttON {
+  opacity: 55%;
+}
+.buttON :hover {
+  scale: 115%;
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+/*--------------------------------------------------Elementos---------------------------------------------------------*/
+.linha {
+  color: white;
+  margin: 25px 0 15px 0;
+}
+
+.texto {
+  color: white;
+  font-size: 12px;
+  font-weight: 200;
+  padding-bottom: 15px;
+}
+
+.saldo {
+  text-align: center;
+}
+.saldo > h1 {
+  margin: 25px 0 5px 0;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 400;
+}
+.saldo > h3 {
+  margin: 5px 0 15px 0;
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.preco > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #181818;
+  border-radius: 10px;
+  padding: 7px 10px 7px 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/*--------------------------------------------------Elementos---------------------------------------------------------*/
+.container_splash {
+  height: 100%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 56px;
+  margin: 0 auto;
+}
+.splash > img {
+  margin-top: 150px;
+}
+
+/*-------------------------------------------------Containers---------------------------------------------------------*/
+.containerCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerRight {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.tituloPagina {
+  color: white;
+  font-weight: 400;
+  padding: 15px 0 15px 0;
+  font-size: 20px;
+}
+
+.tituloAcontecer > * {
+  color: white;
+  text-align: center;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #FF9900;
+  font-weight: 300;
+  width: 65px;
+  font-size: 10px;
+  margin-bottom: 25px;
+}
+
+.tituloPrincipal > * {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tituloLaranja > * {
+  padding: 2px 0 2px 0;
+  color: #FF9900;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.tituloLaranjaValor > * {
+  padding: 2px 0 2px 0;
+  color: #FF9900;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tituloBranco > * {
+  padding: 2px 0 2px 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.tituloBrancoBold > * {
+  padding: 2px 0 2px 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.tituloVerde > * {
+  padding: 2px 0 2px 0;
+  color: #419322;
+  font-weight: 300;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.tituloVerdeValor > * {
+  padding: 2px 0 2px 0;
+  color: #419322;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.tituloCinza > * {
+  padding: 0 0 2px 0;
+  color: #E6E6E6;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.tituloEntrar {
+  padding: 2px 0 2px 0;
+  color: #ff9900;
+  font-weight: 200;
+  font-size: 16px;
+}
+.tituloEntrar :hover {
+  scale: 105%;
+  transition-duration: 500.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+/*---------------------------------------------Barras Principais------------------------------------------------------*/
+.barraHorizontal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to left, #1f1f1f, #323232);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  align-items: baseline;
+}
+.barraHorizontal div {
+  padding: 15px;
+  display: flex;
+}
+.barraHorizontal div img {
+  padding: 0 5px 0 5px;
+}
+.barraHorizontal div h5 {
+  color: white;
+  font-weight: 300;
+  padding: 0 5px 0 5px;
+}
+
+.barraHorizontal:hover {
+  box-shadow: 0 2px 0 rgba(38, 38, 38, 0.4);
+  scale: 100.5%;
+  transition-duration: 100.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+/*----------------------------------------------Barra Pagamento-------------------------------------------------------*/
+.barraRefPagamento {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: linear-gradient(to left, #212121, #323232);
+  margin-bottom: 15px;
+  opacity: 100%;
+  padding: 15px 20px 15px 20px;
+  width: 65%;
+}
+.barraRefPagamento .numerosRef {
+  text-align: right;
+}
+
+.barraDescricaoPagamento {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: linear-gradient(to left, #212121, #323232);
+  opacity: 100%;
+  margin: -10px 0 25px 0;
+  padding: 7px 20px 7px 20px;
+  width: 225px;
+}
+.barraDescricaoPagamento .numerosRef {
+  text-align: right;
+}
+
+.barraMovimentoCashless {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  opacity: 100%;
+  height: 60px;
+}
+.barraMovimentoCashless .baseIconCashless {
+  background-color: #323232;
+  border-radius: 50px;
+}
+.barraMovimentoCashless .iconCashless {
+  display: flex;
+  justify-content: center;
+  background: no-repeat center;
+  background-size: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.barraCarregamento {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.barraCarregamento #valorCarregar {
+  width: 100%;
+}
+.barraCarregamento > div > h4 {
+  color: gray;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 15px 15px 15px 15px;
+  background: linear-gradient(to left, #1f1f1f, #323232);
+  border-radius: 25px;
+}
+.barraCarregamento > div > img {
+  margin-left: 15px;
+  padding: 17px;
+  background: linear-gradient(to right, #181818, #323232);
+  border-radius: 50px;
+  width: 20%;
+}
+
+/*----------------------------------------------Barra Pesquisa / Aviso------------------------------------------------*/
+.barraPesquisa {
+  display: flex;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #2c2c2c, #323232);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  align-items: center;
+  padding: 8px;
+}
+.barraPesquisa > img {
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+}
+.barraPesquisa > * {
+  color: gray;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+#campoPesquisa {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.barraAviso {
+  color: #ff9900;
+  display: flex;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #2c2c2c, #323232);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  align-items: center;
+  padding: 8px;
+}
+.barraAviso > img {
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+}
+.barraAviso > * {
+  color: #ff9900;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/*-----------------------------------------------Barra Festival-------------------------------------------------------*/
+.barraFestival {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 20px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.barraFestival:hover {
+  scale: 100.5%;
+  transition-duration: 3.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+.imagemFestivalBarra {
+  background-size: cover;
+  background-position: center;
+  width: 90px;
+  height: 85px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-right: 10px;
+}
+
+.informacoesEvento {
+  padding: 15px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  position: relative;
+}
+
+/*-----------------------------------------------Barra Artista--------------------------------------------------------*/
+.barraArtista {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.barraArtista:hover {
+  box-shadow: 0 2px 0 rgba(38, 38, 38, 0.4);
+  scale: 100.5%;
+  transition-duration: 100.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+.imagemArtistaBarra {
+  background-size: cover;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.informacoesArtista {
+  padding: 15px 0 15px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+/*-----------------------------------------------Barra Bilhete--------------------------------------------------------*/
+.barraBilheteDisponivel {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  opacity: 100%;
+}
+
+.barraBilheteIndisponivel {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  opacity: 25%;
+}
+
+.baseImagemBilhete {
+  background-color: #323232;
+  border-radius: 50px;
+}
+
+.imagemBilhete {
+  display: flex;
+  justify-content: center;
+  background: no-repeat center;
+  background-size: 45px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.informacoesBilhete {
+  padding: 15px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.tituloBilhete > * {
+  text-decoration: none;
+  padding: 2px 0 2px 0;
+  color: #FF9900;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/*---------------------------------------PopUp Compra de Bilhete------------------------------------------------------*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.popup-content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20%;
+  /*bottom: 20%;*/
+  border-radius: 25px;
+  padding: 10px 25px 20px 25px;
+  margin: 0 35px 0 35px;
+  background: linear-gradient(to right, #212121, #111111);
+}
+.popup-content > h5 {
+  padding: 0 20px 15px 20px;
+}
+
+.botaoPopUp {
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+.botaoPopUp > *:hover {
+  scale: 100.5%;
+  transition-duration: 3.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+.barraDescricaoBilhete {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: linear-gradient(to left, #181818, #323232);
+  opacity: 100%;
+  margin: 10px 0 30px 0;
+  padding: 20px 25px 20px 25px;
+  width: 100%;
+}
+.barraDescricaoBilhete .numerosRef {
+  text-align: right;
+}
+
+.barraComprarCancelar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+}
+.barraComprarCancelar > div > img {
+  width: 35px;
+  height: 35px;
+  margin: -15px 0 -15px 0;
+  padding: 10px 10px 10px 10px;
+}
+.barraComprarCancelar > div > * {
+  font-weight: 300;
+  font-size: 14px;
+}
+.barraComprarCancelar > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-left: 15px;
+  background: linear-gradient(to left, #181818, #323232);
+  border-radius: 25px;
+  margin-right: 55px;
+}
+.barraComprarCancelar > span > img {
+  width: 35px;
+  height: 35px;
+  padding: 12px;
+  background: linear-gradient(to right, #181818, #323232);
+  border-radius: 50px;
+}
+.barraComprarCancelar > span > img:hover {
+  scale: 101.5%;
+  background: linear-gradient(to left, #6c0303, #7a0f0f);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+  cursor: pointer;
+}
+.barraComprarCancelar > div:hover {
+  scale: 101.5%;
+  background: linear-gradient(to left, #436502, #0a4f36);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+/*-----------------------------------------------Loading Splash-------------------------------------------------------*/
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.loadingSplash {
+  margin: 100px 0 25px 0;
+  display: block;
+  text-align: center;
+}
+
+.loading-bar {
+  width: 165px;
+  height: 10px;
+  background-color: rgba(213, 213, 213, 0.37);
+  margin: 0 auto;
+}
+
+.loading-progress {
+  width: 0;
+  height: 100%;
+  background-color: #ff9900;
+  animation: loading-progress 5s ease-in-out forwards;
+}
+
+@keyframes loading-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/*-----------------------------------------Loading da compra de bilehte-----------------------------------------------*/
+.popupLoading {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.94);
+  z-index: 1;
+}
+
+.popup-contentLo {
+  position: relative;
+  top: 45%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.popup-contentLo.loading {
+  max-width: none;
+  text-align: center;
+}
+
+.loader {
+  border: 5px solid rgba(213, 213, 213, 0.37);
+  border-top: 5px dotted #ff9900;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.popup-contentLo.success {
+  text-align: center;
+  align-content: center;
+}
+
+.botao {
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------Favoritos---------------------------------------------------------*/
+.botaoFavorito:hover {
+  cursor: pointer;
+  scale: 102.5%;
+  transition-duration: 100.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+.favorito {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  border-radius: 25px;
+  padding: 10px;
+  align-items: center;
+}
+
+.favorito:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, #212121, #323232);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+.favoritoThumb {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  border-radius: 25px;
+  padding: 10px;
+  align-items: center;
+}
+
+.favoritoThumb:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, #212121, #323232);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+/*------------------------------------------------info Ticket---------------------------------------------------------*/
+.infoTicket {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  padding: 12px 15px 12px 15px;
+  border-radius: 25px;
+}
+
+.infoTicket:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, #212121, #323232);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+/*------------------------------------------------Botão da seta-------------------------------------------------------*/
+.setaBotao > * {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.setaBotao:hover {
+  transform: scale(105.5%);
+  transition-duration: 3.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+/*------------------------------------------------Página Incial-------------------------------------------------------*/
+.thumbAcontecer {
+  display: flex;
+  margin: 5px 0 35px 0;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 125px;
+  padding-bottom: 15px;
+}
+
+.thumbAcontecer:hover {
+  scale: 100.5%;
+  transition-duration: 3.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+.informacoes {
+  padding: 15px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+
+#ticket {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px dashed #ff9900;
+  width: 20%;
+  height: 100%;
+  padding: 15px 0 0 20px;
+}
+
+.thumbSugestao {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 5px 0 15px 0;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+
+.thumbSugestao:hover {
+  scale: 100.5%;
+  transition-duration: 300.1ms;
+  transition-timing-function: cubic-bezier(1, 2, 3, 5);
+}
+
+.precoFavorito {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  padding: 15px 20px 0 20px;
+}
+
+/*------------------------------------Página Artista individual-------------------------------------------------------*/
+.backgroundArtista {
+  position: relative;
+  background-position: center;
+  opacity: 65%;
+  margin: -35px -35px -175px -35px;
+  padding: 35px;
+  height: 100px;
+  filter: blur(5px);
+  z-index: 0;
+}
+
+.thumbArtista {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 18px 0 0;
+  align-items: center;
+  margin-bottom: 25px;
+  background-position: center;
+  z-index: 1;
+}
+.thumbArtista .imagemArtistaThumb {
+  display: flex;
+  justify-content: center;
+  background: no-repeat center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+/*------------------------------------Thumb geral para Festival-------------------------------------------------------*/
+.thumbEvento {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 15px 0 15px 0;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 175px;
+  align-items: flex-end;
+}
+
+.favoritoThumb {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  border-radius: 25px;
+  padding: 8px;
+  margin-right: 15px;
+  z-index: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #181818;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.pagina {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 300;
+  padding: 20px 25px 75px 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */

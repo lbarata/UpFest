@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Festival</title>
+
+</head>
+<body>
+
+<div class="pagina">
+
+    <div class="thumbEvento"
+         style="background-image: url('../assets/images/somnii_23.jpg')">
+        <div class="favoritoThumb" data-id="sonar2024" onclick="adicionarRemover('sonar2024')">
+            <img src="../assets/icons/heart_open.svg" alt="heart_open">
+        </div>
+    </div>
+
+    <div class="informacoesEvento">
+        <a class="tituloPrincipal"> <h2>FESTIVAL</h2> </a>
+        <a class="tituloLaranja"><h4>sábado 30 set.</h4></a>
+        <a class="tituloBranco"> <h4>Pavilhão Carlos Lopes</h4> </a>
+    </div>
+
+    <hr class="linha">
+
+    <h2 class="tituloPagina">Concertos</h2>
+
+    <div class="barraArtista" id="timmy" >
+        <a href="artista.html">
+            <div class="imagemArtistaBarra" style="background-image: url('../assets/images/timmy.jpg')"></div>
+        </a>
+        <div class="informacoesArtista">
+            <a href="artista.html" class="tituloPrincipal"> <h2>TIMMY TRUMPET</h2></a>
+            <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+        </div>
+        <div class="favorito" data-id="timmy" onclick="adicionarRemover('timmy')">
+            <img src="../assets/icons/heart_open.svg" alt="heart_open">
+        </div>
+    </div>
+
+    <div class="barraArtista" id="artbat" >
+        <a href="artista.html">
+            <div class="imagemArtistaBarra" style="background-image: url('../assets/images/artbat.jpg')"></div>
+        </a>
+        <div class="informacoesArtista">
+            <a href="artista.html" class="tituloPrincipal"> <h2>ARTBAT</h2></a>
+            <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+        </div>
+        <div class="favorito" data-id="artbat" onclick="adicionarRemover('artbat')">
+            <img src="../assets/icons/heart_open.svg" alt="heart_open">
+        </div>
+    </div>
+
+    <div class="barraArtista" id="nto" >
+        <a href="artista.html">
+            <div class="imagemArtistaBarra" style="background-image: url('../assets/images/nto.jpg')"></div>
+        </a>
+        <div class="informacoesArtista">
+            <a href="artista.html" class="tituloPrincipal"> <h2>N'TO</h2></a>
+            <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+        </div>
+        <div class="favorito" data-id="nto" onclick="adicionarRemover('nto')">
+            <img src="../assets/icons/heart_open.svg" alt="heart_open">
+        </div>
+    </div>
+
+    <hr class="linha">
+
+    <h2 class="tituloPagina">Informações</h2>
+
+    <h5 class="texto">O RFM Somnii é o maior festival de praia em Portugal. Dedicado à música
+        eletrónica, é palco habitual de alguns dos DJ's mais conhecidos do mundo da música.
+        Por enquanto, Alok, encabeça o sunset que vai cobrir a Praia do Relógio
+        na Figueira da Foz.</h5>
+
+    <hr class="linha">
+
+    <h2 class="tituloPagina">Bilhetes</h2>
+
+    <div class="barraBilheteIndisponivel">
+        <div class="baseImagemBilhete">
+            <div class="imagemBilhete" style="background-image:
+            url('../assets/icons/nav_ticket_active.svg')"></div>
+        </div>
+
+        <div class="informacoesBilhete">
+            <a class="tituloPrincipal"><h4>Indisponível</h4></a>
+            <a class="tituloBranco"> <h2>Early Bird</h2> </a>
+        </div>
+        <div class="preco">
+            <h5> 25,00€</h5>
+        </div>
+    </div>
+
+    <button class="botaoPopUp" onclick="mostrarPopup('popup2')">
+            <div class="barraBilheteDisponivel">
+                <div class="baseImagemBilhete">
+                    <div class="imagemBilhete" style="background-image:
+                    url('../assets/icons/nav_ticket_active.svg')"></div>
+                </div>
+
+                <div class="informacoesBilhete">
+                    <a class="tituloPrincipal"><h4>Segunda Venda</h4></a>
+                    <a class="tituloLaranja"> <h2>Até 20 de abril</h2></a>
+                </div>
+                <div class="preco">
+                    <h5> 35,00€</h5>
+                </div>
+            </div>
+    </button>
+
+    <button class="botaoPopUp" onclick="mostrarPopup('popup3')">
+        <div class="barraBilheteDisponivel">
+            <div class="baseImagemBilhete">
+                <div class="imagemBilhete" style="background-image:
+            url('../assets/icons/nav_ticket_active.svg')"></div>
+            </div>
+
+            <div class="informacoesBilhete">
+                <a class="tituloPrincipal"><h4>Venda Final</h4></a>
+                <a class="tituloLaranja"> <h2>Até 12 de julho</h2></a>
+            </div>
+            <div class="preco">
+                <h5> 45,00€</h5>
+            </div>
+        </div>
+    </button>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+
+            <h2 class="tituloPagina">Confirmação</h2>
+
+            <div class="barraBilheteDisponivel">
+                <div class="baseImagemBilhete">
+                    <div class="imagemBilhete" style="background-image:
+                    url('../assets/icons/nav_ticket_active.svg')"></div>
+                </div>
+
+                <div class="informacoesBilhete">
+
+                    <a class="tituloPrincipal"><h4>Segunda Venda</h4></a>
+                    <a class="tituloLaranja"> <h2>Até 20 de abril</h2> </a>
+
+                </div>
+                <div class="preco">
+                    <h5> 35,00€</h5>
+                </div>
+            </div>
+
+            <h5 class="texto">Estás a comprar um bilhete para o festival RFM Somnii 2024.
+                Verifica os teus dados e clica em “Confirmar” para gerar uma
+                referência de pagamento.</h5>
+
+            <div class="containerCenter">
+                <div class="barraDescricaoBilhete">
+                    <div>
+                        <a class="tituloBrancoBold"> <h2>Nome</h2> </a>
+                        <a class="tituloBrancoBold"> <h2>E-mail</h2> </a>
+                    </div>
+                    <div class="numerosRef">
+                        <a class="tituloBranco"> <h2>João Sousa</h2> </a>
+                        <a class="tituloBranco"> <h2>joao.sousa@gmail.com</h2> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="barraComprarCancelar">
+                <div onclick="simularCompra()">
+                    <img src="../assets/icons/check.png" alt="check">
+                    <h4>Confirmar</h4>
+                </div>
+
+                <span class="close" onclick="fecharPopup('popup2')">
+                    <img src="../assets/icons/close.png" alt="close">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+
+            <h2 class="tituloPagina">Confirmação</h2>
+
+            <div class="barraBilheteDisponivel">
+                <div class="baseImagemBilhete">
+                    <div class="imagemBilhete" style="background-image:
+                    url('../assets/icons/nav_ticket_active.svg')"></div>
+                </div>
+
+                <div class="informacoesBilhete">
+
+                    <a class="tituloPrincipal"><h4>Venda Final</h4></a>
+                    <a class="tituloLaranja"> <h2>Até 12 de Julho</h2> </a>
+
+                </div>
+                <div class="preco">
+                    <h5> 45,00€</h5>
+                </div>
+            </div>
+
+            <h5 class="texto">Estás a comprar um bilhete para o festival RFM Somnii 2024.
+                Verifica os teus dados e clica em “Confirmar” para gerar uma
+                referência de pagamento.</h5>
+
+            <div class="containerCenter">
+                <div class="barraDescricaoBilhete">
+                    <div>
+                        <a class="tituloBrancoBold"> <h2>Nome</h2> </a>
+                        <a class="tituloBrancoBold"> <h2>E-mail</h2> </a>
+                    </div>
+                    <div class="numerosRef">
+                        <a class="tituloBranco"> <h2>João Sousa</h2> </a>
+                        <a class="tituloBranco"> <h2>joao.sousa@gmail.com</h2> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="barraComprarCancelar">
+                <div onclick="simularCompra()">
+                    <img src="../assets/icons/check.png" alt="check">
+                    <h4>Confirmar</h4>
+                </div>
+
+                <span class="close" onclick="fecharPopup('popup3')">
+                    <img src="../assets/icons/close.png" alt="close">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <a class="containerCenter">
+       <div id="loading-popup" class="popupLoading">
+           <div class="popup-contentLo loading">
+               <div class="loader"></div>
+               <a class="tituloLaranja"><h2>A processar a compra...</h2></a>
+           </div>
+       </div>
+   </a>
+
+    <a class="containerCenter">
+        <div id="success-popup" class="popupLoading">
+            <div class="popup-contentLo success">
+                <a class="tituloLaranjaValor"><h2>Bilhete comprado com sucesso!</h2></a>
+            </div>
+        </div>
+    </a>
+
+</div>
+
+<div class="menu">
+    <a class="buttON" href="incio.html"><img src="../assets/icons/nav_home.svg" alt="nav_home"></a>
+    <a href="pesquisa.html"><img src="../assets/icons/nav_search_active.svg" alt="nav_search"></a>
+    <a class="buttON" href="bilhetes.html"><img src="../assets/icons/nav_ticket.svg" alt="nav_ticket"></a>
+    <a class="buttON" href="pessoal.html"><img src="../assets/icons/nav_user.svg" alt="nav_user"></a>
+</div>
+
+</body>
+
+<script src="../javascript/favoritos.js"></script>
+<script src="../javascript/popups.js"></script>
+<script src="../javascript/loading.js"></script>
+
+</html>

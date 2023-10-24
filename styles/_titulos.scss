@@ -1,0 +1,101 @@
+.tituloPagina {
+  color: white;
+  font-weight: 400;
+  padding: 15px 0 15px 0;
+  font-size: 20px;
+}
+
+.tituloAcontecer > *{
+  color: white;
+  text-align: center;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #FF9900;
+  font-weight: 300;
+  width: 65px;
+  font-size: 10px;
+  margin-bottom: 25px;
+}
+
+.tituloPrincipal > * {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tituloLaranja > * {
+  padding: 2px 0 2px 0;
+  color: #FF9900;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.tituloLaranjaValor > * {
+  padding: 2px 0 2px 0;
+  color: #FF9900;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.tituloBranco > * {
+  padding: 2px 0 2px 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
+.tituloBrancoBold > * {
+  padding: 2px 0 2px 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+
+}
+
+.tituloVerde > * {
+  padding: 2px 0 2px 0;
+  color: #419322;
+  font-weight: 300;
+  font-size: 10px;
+  text-decoration: none;
+
+}
+
+.tituloVerdeValor > * {
+  padding: 2px 0 2px 0;
+  color: #419322;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+
+
+.tituloCinza > * {
+  padding: 0 0 2px 0;
+  color: #E6E6E6;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+
+.tituloEntrar {
+  padding: 2px 0 2px 0;
+  color: #ff9900;
+  font-weight: 200;
+  font-size: 16px;
+  :hover{
+    scale: 105%;
+    transition-duration: 500.1ms;
+    transition-timing-function: cubic-bezier(1, 2, 3, 5);
+  }
+
+}
+
+
+

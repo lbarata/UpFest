@@ -1,0 +1,110 @@
+
+/*---------------------------------------PopUp Compra de Bilhete------------------------------------------------------*/
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.popup-content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20%;
+  /*bottom: 20%;*/  // restringir caso o ecrã seja muito pequeno
+  border-radius: 25px;
+  padding: 10px 25px 20px 25px;
+  margin: 0 35px 0 35px;
+  background: linear-gradient(to right, #212121, #111111);
+  > h5 {
+    padding: 0 20px 15px 20px;
+  }
+}
+
+.botaoPopUp {
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  > *:hover {
+    scale: 100.5%;
+    transition-duration: 3.1ms;
+    transition-timing-function: cubic-bezier(1,2,3,5);
+  }
+}
+
+
+.barraDescricaoBilhete {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: linear-gradient(to left, #181818, #323232);
+  opacity: 100%;
+  margin: 10px 0 30px 0;
+  padding: 20px 25px 20px 25px;
+  width: 100%;
+  .numerosRef {
+    text-align: right;
+  }
+}
+
+.barraComprarCancelar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+
+  > div > img {
+    width: 35px;
+    height: 35px;
+    margin: -15px 0 -15px 0;
+    padding: 10px 10px 10px 10px;
+  }
+  > div > * {
+    font-weight: 300;
+    font-size: 14px;
+
+  }
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+    background: linear-gradient(to left, #181818, #323232);
+    border-radius: 25px;
+    margin-right: 55px;
+  }
+  > span > img {
+    width: 35px;
+    height: 35px;
+    padding: 12px;
+    background: linear-gradient(to right, #181818, #323232);
+    border-radius: 50px;
+  }
+
+  > span >img:hover {
+    scale: 101.5%;
+    background: linear-gradient(to left, #6c0303, #7a0f0f);
+    transition-duration: 800.1ms;
+    transition-timing-function: cubic-bezier(1,2,3,5);
+    cursor: pointer;
+  }
+
+  > div:hover {
+    scale: 101.5%;
+    background: linear-gradient(to left, #436502, #0a4f36);
+    transition-duration: 800.1ms;
+    transition-timing-function: cubic-bezier(1,2,3,5);
+
+  }
+}

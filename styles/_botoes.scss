@@ -1,0 +1,94 @@
+.botao {
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+
+
+/*--------------------------------------------------Favoritos---------------------------------------------------------*/
+
+
+.botaoFavorito:hover {
+  cursor: pointer;
+  scale: 102.5%;
+  transition-duration: 100.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+}
+
+
+.favorito {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  border-radius: 25px;
+  padding: 10px;
+  align-items: center;
+}
+
+
+.favorito:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, #212121, #323232);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+
+}
+
+.favoritoThumb {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  border-radius: 25px;
+  padding: 10px;
+  align-items: center;
+}
+
+.favoritoThumb:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, #212121, #323232);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+
+}
+
+
+/*------------------------------------------------info Ticket---------------------------------------------------------*/
+
+
+.infoTicket {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  padding:12px 15px 12px 15px ;
+  border-radius: 25px;
+}
+
+.infoTicket:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, #212121, #323232);
+  transition-duration: 800.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+
+}
+
+/*------------------------------------------------Botão da seta-------------------------------------------------------*/
+
+
+.setaBotao > *{
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);;
+  padding: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.setaBotao:hover{
+  transform: scale(105.5%);
+  transition-duration: 3.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+}

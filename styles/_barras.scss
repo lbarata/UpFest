@@ -1,0 +1,306 @@
+
+/*---------------------------------------------Barras Principais------------------------------------------------------*/
+
+.barraHorizontal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to left, #1f1f1f, #323232);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  align-items: baseline;
+
+
+
+  div {
+    padding: 15px;
+    display: flex;
+    img{
+      padding: 0 5px 0 5px;
+    }
+    h5 {
+      color: white;
+      font-weight: 300;
+      padding: 0 5px 0 5px;
+    }
+  }
+}
+
+
+.barraHorizontal:hover{
+  box-shadow: 0 2px 0 rgba(38, 38, 38, 0.4);
+  scale: 100.5%;
+  transition-duration: 100.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+}
+
+/*----------------------------------------------Barra Pagamento-------------------------------------------------------*/
+
+.barraRefPagamento {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: linear-gradient(to left, #212121, #323232);
+  margin-bottom: 15px;
+  opacity: 100%;
+  padding: 15px 20px 15px 20px;
+  width: 65%;
+
+  .numerosRef {
+    text-align: right;
+  }
+}
+
+.barraDescricaoPagamento {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: linear-gradient(to left, #212121, #323232);
+  opacity: 100%;
+  margin: -10px 0 25px 0;
+  padding: 7px 20px 7px 20px;
+  width: 225px;
+
+  .numerosRef {
+    text-align: right;
+  }
+}
+
+
+.barraMovimentoCashless{
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  opacity: 100%;
+  height: 60px;
+
+  .baseIconCashless{
+    background-color: #323232;
+    border-radius: 50px;
+  }
+
+  .iconCashless{
+    display: flex;
+    justify-content: center;
+    background: no-repeat center;
+    background-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+
+}
+
+.barraCarregamento {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  #valorCarregar {
+    width: 100%;
+  }
+  > div > h4 {
+    color: gray;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 15px 15px 15px 15px;
+    background: linear-gradient(to left, #1f1f1f, #323232);
+    border-radius: 25px;
+  }
+  > div > img {
+    margin-left: 15px;
+    padding: 17px;
+    background: linear-gradient(to right, #181818, #323232);
+    border-radius: 50px;
+    width: 20%;
+  }
+}
+
+
+/*----------------------------------------------Barra Pesquisa / Aviso------------------------------------------------*/
+
+.barraPesquisa {
+  display: flex;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #2c2c2c, #323232);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  align-items: center;
+  padding: 8px;
+
+  > img {
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+  }
+  > * {
+    color: gray;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+#campoPesquisa {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+
+.barraAviso {
+  color: #ff9900;
+  display: flex;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #2c2c2c, #323232);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  align-items: center;
+  padding: 8px;
+
+  > img {
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+  }
+  > * {
+    color: #ff9900;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+/*-----------------------------------------------Barra Festival-------------------------------------------------------*/
+.barraFestival {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 20px;
+  background: linear-gradient(to right, #181818, #323232);;
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.barraFestival:hover{
+  scale: 100.5%;
+  transition-duration: 3.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+}
+
+.imagemFestivalBarra {
+  background-size: cover;
+  background-position: center;
+  width: 90px;
+  height: 85px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-right: 10px;
+}
+
+
+.informacoesEvento{
+  padding: 15px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  position: relative;
+}
+
+/*-----------------------------------------------Barra Artista--------------------------------------------------------*/
+
+.barraArtista{
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);;
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.barraArtista:hover{
+  box-shadow: 0 2px 0 rgba(38, 38, 38, 0.4);
+  scale: 100.5%;
+  transition-duration: 100.1ms;
+  transition-timing-function: cubic-bezier(1,2,3,5);
+}
+
+.imagemArtistaBarra{
+  background-size: cover;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.informacoesArtista{
+  padding: 15px 0 15px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+/*-----------------------------------------------Barra Bilhete--------------------------------------------------------*/
+
+.barraBilheteDisponivel{
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  opacity: 100%;
+}
+
+.barraBilheteIndisponivel{
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  background: linear-gradient(to right, #181818, #323232);
+  padding-right: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  opacity: 25%;
+}
+
+
+.baseImagemBilhete{
+  background-color: #323232;
+  border-radius: 50px;
+}
+
+.imagemBilhete{
+  display: flex;
+  justify-content: center;
+  background: no-repeat center;
+  background-size: 45px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.informacoesBilhete{
+  padding: 15px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+
+.tituloBilhete > * {
+  text-decoration: none;
+  padding: 2px 0 2px 0;
+  color: #FF9900;
+  font-weight: 300;
+  font-size: 12px;
+
+}
+
+
+

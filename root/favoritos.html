@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Favoritos</title>
+
+</head>
+<body>
+
+<div class="pagina">
+
+    <h2 class="tituloPagina">Favoritos</h2>
+
+    <div id="favoritosContainerTodos">
+
+        <div class="barraArtista" id="amelie-lens" style="display: none">
+            <a href="artista.html">
+                <div class="imagemArtistaBarra" style="background-image: url('../assets/images/amelie.jpg')"></div>
+            </a>
+            <div class="informacoesArtista">
+                <a href="artista.html" class="tituloPrincipal"><h2>AMELIE LENS</h2></a>
+                <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+            </div>
+            <div class="favorito" data-id="amelie-lens" onclick="adicionarRemover('amelie-lens')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraArtista" id="artbat" style="display: none">
+            <a href="artista.html">
+                <div class="imagemArtistaBarra" style="background-image: url('../assets/images/artbat.jpg')"></div>
+            </a>
+            <div class="informacoesArtista">
+                <a href="artista.html" class="tituloPrincipal"><h2>ARTBAT</h2></a>
+                <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+            </div>
+            <div class="favorito" data-id="artbat" onclick="adicionarRemover('artbat')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraArtista" id="blasterjaxx" style="display: none">
+            <a href="artista.html">
+                <div class="imagemArtistaBarra" style="background-image: url('../assets/images/blasterjaxx.jpg')"></div>
+            </a>
+            <div class="informacoesArtista">
+                <a href="artista.html" class="tituloPrincipal"><h2>BALASTERJAXX</h2></a>
+                <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+            </div>
+            <div class="favorito" data-id="blasterjaxx" onclick="adicionarRemover('blasterjaxx')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraFestival" id="brunch" style="display: none">
+            <a href="festival.html">
+                <div class="imagemFestivalBarra" style="background-image: url('../assets/images/brunch.jpg')"></div>
+            </a>
+            <div class="informacoesEvento">
+                <a href="festival.html" class="tituloPrincipal"><h2>BRUNCH ELECTRONIK</h2></a>
+                <a href="festival.html" class="tituloLaranja"><h4>domingo 17 set.</h4></a>
+                <a href="festival.html" class="tituloBranco"><h4>Pavilhão Carlos Lopes</h4></a>
+            </div>
+            <div class="favorito" data-id="brunch" onclick="adicionarRemover('brunch')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraArtista" id="hardwell" style="display: none">
+            <a href="artista.html">
+                <div class="imagemArtistaBarra" style="background-image: url('../assets/images/hardwell.jpg')"></div>
+            </a>
+            <div class="informacoesArtista">
+                <a href="artista.html" class="tituloPrincipal"><h2>HARDWELL</h2></a>
+                <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+            </div>
+            <div class="favorito" data-id="hardwell" onclick="adicionarRemover('hardwell')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraArtista" id="nto" style="display: none">
+            <a href="artista.html">
+                <div class="imagemArtistaBarra" style="background-image: url('../assets/images/nto.jpg')"></div>
+            </a>
+            <div class="informacoesArtista">
+                <a href="artista.html" class="tituloPrincipal"><h2>NTO</h2></a>
+                <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+            </div>
+            <div class="favorito" data-id="nto" onclick="adicionarRemover('nto')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraArtista" id="oliver" style="display: none">
+            <a href="artista.html">
+                <div class="imagemArtistaBarra" style="background-image: url('../assets/images/oliver.jpg')"></div>
+            </a>
+            <div class="informacoesArtista">
+                <a href="artista.html" class="tituloPrincipal"><h2>OLIVER</h2></a>
+                <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+            </div>
+            <div class="favorito" data-id="oliver" onclick="adicionarRemover('oliver')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraFestival" id="somnii23" style="display: none">
+            <a href="festival.html">
+                <div class="imagemFestivalBarra" style="background-image: url('../assets/images/somnii_23.jpg')"></div>
+            </a>
+            <div class="informacoesEvento">
+                <a href="festival.html" class="tituloPrincipal"><h2>RFM SOMNII 2023</h2></a>
+                <a href="festival.html" class="tituloLaranja"><h4>sexta 12 jul.</h4></a>
+                <a href="festival.html" class="tituloBranco"><h4>Praia do Relógio, Figueira da Foz</h4></a>
+            </div>
+            <div class="favorito" data-id="somnii23" onclick="adicionarRemover('somnii23')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraFestival" id="somnii24" style="display: none">
+            <a href="festival.html">
+                <div class="imagemFestivalBarra" style="background-image: url('../assets/images/somnii_24.jpg')"></div>
+            </a>
+            <div class="informacoesEvento">
+                <a href="festival.html" class="tituloPrincipal"><h2>RFM SOMNII 2024</h2></a>
+                <a href="festival.html" class="tituloLaranja"><h4>sexta 12 jul.</h4></a>
+                <a href="festival.html" class="tituloBranco"><h4>Praia do Relógio, Figueira da Foz</h4></a>
+            </div>
+            <div class="favorito" data-id="somnii24" onclick="adicionarRemover('somnii24')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraFestival" id="sonar2023" style="display: none">
+            <a href="festival.html">
+                <div class="imagemFestivalBarra" style="background-image: url('../assets/images/sonar_23.jpg')"></div>
+            </a>
+            <div class="informacoesEvento">
+                <a href="festival.html" class="tituloPrincipal"><h2>SONAR 2023</h2></a>
+                <a class="tituloLaranja"><h4>sábado 30 set.</h4></a>
+                <a class="tituloBranco"><h4>Pavilhão Carlos Lopes</h4></a>
+            </div>
+            <div class="favorito" data-id="sonar2023" onclick="adicionarRemover('sonar2023')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraFestival" id="sonar2024" style="display: none">
+            <a href="festival.html">
+                <div class="imagemFestivalBarra" style="background-image: url('../assets/images/sonar_24.jpg')"></div>
+            </a>
+            <div class="informacoesEvento">
+                <a href="festival.html" class="tituloPrincipal"><h2>SONAR 2024</h2></a>
+                <a class="tituloLaranja"><h4>sábado 30 set.</h4></a>
+                <a class="tituloBranco"><h4>Pavilhão Carlos Lopes</h4></a>
+            </div>
+            <div class="favorito" data-id="sonar2024" onclick="adicionarRemover('sonar2024')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraArtista" id="timmy" style="display: none">
+            <a href="artista.html">
+                <div class="imagemArtistaBarra" style="background-image: url('../assets/images/timmy.jpg')"></div>
+            </a>
+            <div class="informacoesArtista">
+                <a href="artista.html" class="tituloPrincipal"><h2>TIMMY TRUMPET</h2></a>
+                <a href="artista.html" class="tituloLaranja"><h4>Artista</h4></a>
+            </div>
+            <div class="favorito" data-id="timmy" onclick="adicionarRemover('timmy')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+        <div class="barraFestival" id="tomorrowland" style="display: none">
+            <a href="festival.html">
+                <div class="imagemFestivalBarra" style="background-image: url('../assets/images/tomorrowland.jpg')"></div>
+            </a>
+            <div class="informacoesEvento">
+                <a href="festival.html" class="tituloPrincipal"><h2>TOMORROWLAND</h2></a>
+                <a class="tituloLaranja"><h4>sábado 30 set.</h4></a>
+                <a class="tituloBranco"><h4>Pavilhão Carlos Lopes</h4></a>
+            </div>
+            <div class="favorito" data-id="tomorrowland" onclick="adicionarRemover('tomorrowland')">
+                <img src="../assets/icons/heart_open.svg" alt="heart_open">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="menu">
+    <a class="buttON" href="incio.html"><img src="../assets/icons/nav_home.svg"></a>
+    <a class="buttON" href="pesquisa.html"><img src="../assets/icons/nav_search.svg"></a>
+    <a class="buttON" href="bilhetes.html"><img src="../assets/icons/nav_ticket.svg"></a>
+    <a href="pessoal.html"><img src="../assets/icons/nav_user_active.svg"></a>
+</div>
+
+</body>
+<script src="../javascript/favoritos.js"></script>
+</html>

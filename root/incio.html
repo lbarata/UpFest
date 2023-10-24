@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Início</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+
+</head>
+<body>
+
+<div class="pagina">
+
+    <h2 class="tituloPagina">Bom dia, David</h2>
+
+    <div class="thumbAcontecer"
+
+             style="background-image:
+             linear-gradient(to bottom, rgba(169,169,169,0),
+             #1f1f1f), url('../assets/images/brunch.jpg')">
+
+            <div class="informacoes">
+                <a href="bilhetes.html" class="tituloAcontecer"> <h5>a acontecer</h5> </a>
+                <a href="bilhetes.html" class="tituloPrincipal"> <h2>BRUNCH ELECTRONIK</h2> </a>
+                <a href="bilhetes.html" class="tituloLaranja"><h4>domingo 17 set.</h4></a>
+                <a href="bilhetes.html" class="tituloBranco"> <h4>Tapada da Ajuda</h4> </a>
+            </div>
+            <div id="ticket"></div>
+
+        </div>
+
+    <a href="pessoal.html">
+            <div class="barraHorizontal">
+                <div>
+                    <img src="../assets/icons/nav_ticket_active.svg">
+                    <h5 class="tituloBranco">1 x Venda Final</h5>
+                </div>
+                <div>
+                    <img src="../assets/icons/qr.svg">
+                </div>
+            </div>
+        </a>
+
+    <a href="cashless.html">
+            <div class="barraHorizontal">
+                <div>
+                    <img src="../assets/icons/cash.svg">
+                    <h5 class="tituloBranco">Saldo Cashless</h5>
+                </div>
+                <div>
+                    <h5 class="tituloBranco">78,50€</h5>
+                </div>
+            </div>
+        </a>
+
+    <h2 class="tituloPagina">Sugestões</h2>
+
+    <div class="thumbSugestao" id="somnii24"
+
+             style="background-image: linear-gradient(to bottom, rgba(169,169,169,0),
+            #1f1f1f), url('../assets/images/somnii_23.jpg')">
+
+            <div class="informacoes">
+                    <a href="festival.html" class="tituloPrincipal"> <h2>RFM SOMNII 2024</h2> </a>
+                    <a href="festival.html" class="tituloLaranja"><h4>sexta 12 jul.</h4></a>
+                    <a href="festival.html" class="tituloBranco"> <h4>Praia do Relógio, Figueira de Foz</h4> </a>
+            </div>
+
+
+            <div class="precoFavorito">
+                <a href="festival.html">
+                    <div class="preco">
+                        <h5> 55,00€</h5>
+                    </div>
+                </a>
+
+
+                <div class="favorito" data-id="somnii24" onclick="adicionarRemover('somnii24')">
+                    <img src="../assets/icons/heart_open.svg" alt="heart_open">
+                </div>
+            </div>
+        </div>
+
+    <div  class="thumbSugestao"  id="brunch"
+
+              style="background-image:linear-gradient(to bottom, rgba(169,169,169,0), #1f1f1f), url('../assets/images/brunch.jpg')">
+
+            <div class="informacoes">
+                    <a href="festival.html" class="tituloPrincipal"> <h2>BRUNCH ELECTRONIK LISBOA</h2> </a>
+                    <a href="festival.html" class="tituloLaranja"><h4>domingo 17 set.</h4></a>
+                    <a href="festival.html" class="tituloBranco"> <h4>Tapada da Ajuda</h4> </a>
+                </div>
+
+               <div class="precoFavorito">
+                   <a href="festival.html">
+                       <div class="preco">
+                           <h5> 55,00€</h5>
+                       </div>
+                   </a>
+
+                   <div class="favorito" data-id="brunch" onclick="adicionarRemover('brunch')">
+                       <img src="../assets/icons/heart_open.svg">
+                   </div>
+               </div>
+        </div>
+
+ </div>
+
+<div class="menu">
+    <a href="incio.html"><img src="../assets/icons/nav_home_active.svg"></a>
+    <a class="buttON" href="pesquisa.html"><img src="../assets/icons/nav_search.svg"></a>
+    <a class="buttON" href="bilhetes.html"><img src="../assets/icons/nav_ticket.svg"></a>
+    <a class="buttON" href="pessoal.html"><img src="../assets/icons/nav_user.svg"></a>
+</div>
+
+</body>
+<script src="../javascript/favoritos.js"></script>
+</html>

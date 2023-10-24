@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Artista</title>
+
+</head>
+<body>
+
+<div class="pagina">
+
+    <div class="backgroundArtista" style="background-image: url('../assets/images/hardwell.jpg')">
+
+    </div>
+
+    <div class="thumbArtista">
+
+        <a>
+            <div class="imagemArtistaThumb" style="background-image: url('../assets/images/hardwell.jpg')"></div>
+        </a>
+
+        <div class="informacoesArtista">
+            <a class="tituloPrincipal"> <h2>HARDWELL</h2> </a>
+            <a class="tituloLaranja"><h4>Artista</h4></a>
+        </div>
+
+
+        <div class="favorito" data-id="hardwell" onclick="adicionarRemover('hardwell')">
+            <img src="../assets/icons/heart_open.svg" alt="heart_open">
+        </div>
+
+    </div>
+
+    <h2 class="tituloPagina">Próximos concertos</h2>
+
+    <div class="barraFestival" id="brunch">
+        <a href="festival.html">
+            <div class="imagemFestivalBarra" style="background-image: url('../assets/images/brunch.jpg')"></div>
+        </a>
+        <div class="informacoesEvento">
+            <a href="festival.html" class="tituloPrincipal"><h2>BRUNCH ELECTRONIK</h2></a>
+            <a href="festival.html" class="tituloLaranja"><h4>domingo 17 set.</h4></a>
+            <a href="festival.html" class="tituloBranco"><h4>Pavilhão Carlos Lopes</h4></a>
+        </div>
+        <div class="favorito" data-id="brunch" onclick="adicionarRemover('brunch')">
+            <img src="../assets/icons/heart_open.svg" alt="heart_open">
+        </div>
+    </div>
+
+    <div class="barraFestival" id="somnii24">
+        <a href="festival.html">
+            <div class="imagemFestivalBarra" style="background-image: url('../assets/images/somnii_24.jpg')"></div>
+        </a>
+        <div class="informacoesEvento">
+            <a href="festival.html" class="tituloPrincipal"><h2>RFM SOMNII 2024</h2></a>
+            <a href="festival.html" class="tituloLaranja"><h4>sexta 12 jul.</h4></a>
+            <a href="festival.html" class="tituloBranco"><h4>Praia do Relógio, Figueira da Foz</h4></a>
+        </div>
+        <div class="favorito" data-id="somnii24" onclick="adicionarRemover('somnii24')">
+            <img src="../assets/icons/heart_open.svg" alt="heart_open">
+        </div>
+    </div>
+
+    <h2 class="tituloPagina">Sobre</h2>
+
+    <h5 class="texto">
+        <p>
+            Ao longo da sua vasta carreira como DJ de sucesso, produtor, remixer, dono de editora,
+            cineasta e filantropo, o ex-2 vezes DJ no 1 do mundo, Hardwell, cimentou um legado
+            duradouro no mundo da música eletrónica.
+        </p><br><p>
+            Originário de Breda, uma cidade escondida nas profundezas dos Países Baixos, a jornada de Hardwell
+            começou aos 14 anos, tornando-se um artista muito procurado na cena de dança holandesa antes de começar
+            a receber atenção internacional. Dez anos depois, Hardwell, com 25 anos, culminou uma trajetória perene
+            quando foi coroado pela primeira vez como DJ no 1 do mundo em 2013. Já a caminho de ajudar a moldar
+            a explosão do EDM naquela época, Hardwell emergiu como uma das estrelas mais aclamadas da era
+            moderna da música eletrónica.
+        </p>
+    </h5>
+
+</div>
+
+<div class="menu">
+    <a class="buttON" href="incio.html"><img src="../assets/icons/nav_home.svg" alt="nav_home"></a>
+    <a href="pesquisa.html"><img src="../assets/icons/nav_search_active.svg" alt="nav_search"></a>
+    <a class="buttON" href="bilhetes.html"><img src="../assets/icons/nav_ticket.svg" alt="nav_ticket"></a>
+    <a class="buttON" href="pessoal.html"><img src="../assets/icons/nav_user.svg" alt="nav_user"></a>
+</div>
+
+</body>
+<script src="../javascript/favoritos.js"></script>
+</html>
